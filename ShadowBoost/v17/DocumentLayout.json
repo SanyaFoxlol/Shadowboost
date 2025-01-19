@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\Node.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\Node.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\reset-password.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\reset-password.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\script.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\script.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\verification.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\verification.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\style.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles\\style.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\password-reset.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles\\password-reset.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\forgot-password.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:forgot-password.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\password-reset.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:password-reset.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\login.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\profile.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:profile.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\verification.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:verification.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\style-login.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles\\style-login.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\forgot-password.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles\\forgot-password.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\style.css",
+              "RelativeDocumentMoniker": "styles\\style.css",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\style.css",
+              "RelativeToolTip": "styles\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-19T13:49:41.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "password-reset.css",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\password-reset.css",
+              "RelativeDocumentMoniker": "styles\\password-reset.css",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\password-reset.css",
+              "RelativeToolTip": "styles\\password-reset.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-19T13:49:39.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "forgot-password.html",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\forgot-password.html",
+              "RelativeDocumentMoniker": "forgot-password.html",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\forgot-password.html",
+              "RelativeToolTip": "forgot-password.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-19T13:48:52.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-19T13:48:57.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "password-reset.html",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\password-reset.html",
+              "RelativeDocumentMoniker": "password-reset.html",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\password-reset.html",
+              "RelativeToolTip": "password-reset.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-19T13:52:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "verification.js",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\verification.js",
+              "RelativeDocumentMoniker": "scripts\\verification.js",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\verification.js",
+              "RelativeToolTip": "scripts\\verification.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-19T13:49:33.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\script.js",
+              "RelativeDocumentMoniker": "scripts\\script.js",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\script.js",
+              "RelativeToolTip": "scripts\\script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-19T13:49:32.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "reset-password.js",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\reset-password.js",
+              "RelativeDocumentMoniker": "scripts\\reset-password.js",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\reset-password.js",
+              "RelativeToolTip": "scripts\\reset-password.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-19T13:49:31.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Node.js",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\Node.js",
+              "RelativeDocumentMoniker": "scripts\\Node.js",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\scripts\\Node.js",
+              "RelativeToolTip": "scripts\\Node.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-19T13:49:26.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\login.html",
+              "RelativeDocumentMoniker": "login.html",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\login.html",
+              "RelativeToolTip": "login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-19T13:48:54.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "profile.html",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\profile.html",
+              "RelativeDocumentMoniker": "profile.html",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\profile.html",
+              "RelativeToolTip": "profile.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-19T13:49:13.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "verification.html",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\verification.html",
+              "RelativeDocumentMoniker": "verification.html",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\verification.html",
+              "RelativeToolTip": "verification.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-19T13:52:15.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "style-login.css",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\style-login.css",
+              "RelativeDocumentMoniker": "styles\\style-login.css",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\style-login.css",
+              "RelativeToolTip": "styles\\style-login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-19T13:49:40.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "forgot-password.css",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\forgot-password.css",
+              "RelativeDocumentMoniker": "styles\\forgot-password.css",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\ShadowBoost\\ShadowBoost\\styles\\forgot-password.css",
+              "RelativeToolTip": "styles\\forgot-password.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-19T13:49:38.077Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
