@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/style-login.css">
+    <title>Authorization Page</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="grid"></div>
+        <div class="lights"></div>
+    </div>
+    <div class="figures">
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+        <div class="figure"></div>
+    </div>
+    <div class="container" id="container">
+        <!-- Регистрация -->
+        <div class="form-container sign-up">
+            <form id="register-form">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" id="register-name" placeholder="Name" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <!-- Вход -->
+        <div class="form-container sign-in">
+            <form id="login-form">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email and password</span>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <a href="forgot-password.html">Forgot Your Password?</a>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Локальная база данных (используем localStorage)
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+
+        // Регистрация
+        const registerForm = document.getElementById('register-form');
+        registerForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('register-name').value.trim();
+            const email = document.getElementById('register-email').value.trim();
+            const password = document.getElementById('register-password').value;
+
+            // Проверка, существует ли пользователь
+            if (users.find(user => user.email === email)) {
+                alert('User with this email already exists!');
+                return;
+            }
+
+            // Добавление нового пользователя в базу данных
+            users.push({ name, email, password });
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Registration successful!');
+            registerForm.reset();
+        });
+
+        // Авторизация
+        const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const email = document.getElementById('login-email').value.trim();
+            const password = document.getElementById('login-password').value;
+
+            // Проверка данных пользователя
+            const user = users.find(user => user.email === email && user.password === password);
+            if (user) {
+                alert(`Welcome back, ${user.name}!`);
+                loginForm.reset();
+            } else {
+                alert('Invalid email or password!');
+            }
+        });
+
+        // Переключение между формами
+        const container = document.getElementById('container');
+        document.getElementById('register').addEventListener('click', () => {
+            container.classList.add("active");
+        });
+        document.getElementById('login').addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>

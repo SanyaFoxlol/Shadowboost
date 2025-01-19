@@ -1,0 +1,249 @@
+/* Общий стиль */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.homepage {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.homepage .background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/ProjectFon.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.PeaceDuke {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/Rickrolling.gif') no-repeat center center fixed;
+  background-size: 60%;
+}
+
+/* Кнопка "Login / Register" */
+.homepage header {
+  position: fixed;
+  top: 30px;
+  left: 1300px;
+  z-index: 100;
+}
+
+.homepage .auth-button button {
+  background-color: #512da8;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.homepage .auth-button button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Контент (заголовки, карточки, кнопки) */
+.homepage .content {
+  display: flex; /* Используем flexbox для горизонтального размещения */
+  flex-direction: row; /* Горизонтальное направление для элементов */
+  justify-content: center; /* Выравниваем кнопки по центру контейнера */
+  gap: 10px; /* Задаем расстояние между кнопками */
+}
+
+/* Карточки (основной стиль) */
+/* Базовый стиль для всех карточек */
+.homepage .icon-card {
+  background-color: #4a0c87;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 70px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: absolute; /* Позволяет задавать произвольные позиции */
+}
+
+/* Позиции карточек */
+.homepage .icon-card:nth-child(1) { transform: translate(-255px, 450px); }
+.homepage .icon-card:nth-child(2) { transform: translate(-112px, 450px); }
+.homepage .icon-card:nth-child(3) { transform: translate(32px, 450px); }
+.homepage .icon-card:nth-child(4) { transform: translate(175px, 450px); }
+.homepage .icon-card:nth-child(5) { transform: translate(317px, 450px); }
+
+/* Стиль текста в карточках */
+.homepage .icon-card h3 {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Грид карточек */
+.homepage .icon-grid {
+  position: fixed;
+  left: 52.5%;
+  top: 85%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2.3rem;
+}
+
+/* Основные кнопки */
+.homepage .main-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+  width: 45%;
+  max-width: 1000px;
+  margin: 200px auto 0;
+  position: relative;
+}
+
+/* Стиль для кнопок (Categories, Reviews и т.д.) */
+.buttons.main-buttons button {
+  background-color: #6a0dad;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.buttons.main-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Индивидуальные кнопки с фиксированным расположением */
+#btn-categories,
+#btn-reviews,
+#btn-aboutus,
+#btn-pricing,
+#btn-support {
+  position: absolute;
+  top: -410px;
+  width: 110px;
+  height: 114px;
+  background-color: #4a0c87;
+  border-radius: 15px;
+}
+
+#btn-categories { left: 30px; }
+#btn-reviews { left: 173px; }
+#btn-aboutus { left: 318px; }
+#btn-pricing { left: 462px; }
+#btn-support { left: 603px; }
+
+/* Боковое меню */
+.homepage .side-menu {
+  position: fixed;
+  top: 18%;
+  left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.homepage .side-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a0c87;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  width: 120px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.homepage .side-menu button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Раздел для прокрутки */
+.homepage .scroll-section {
+  position: relative;
+  padding: 2rem 0;
+  background: #f3f3f3;
+  text-align: center;
+  margin-top: 100vh;
+}
+
+.homepage .scroll-section img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+}
+
+.homepage .scroll-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a0c87;
+  margin-bottom: 1rem;
+
+
+color: #333;
+max-width: 800px;
+margin: 0 auto;
+}
+
+/* Стиль для контейнера кнопки профиля */
+.homepage .profile-button-container {
+  position: fixed;
+  top: 25px;
+  right: 20px;
+}
+
+/* Стиль для кнопки профиля */
+.homepage .profile-button {
+  background-color: #4a0c87;
+  width: 50px; /* Размер кнопки */
+  height: 50px; /* Размер кнопки */
+  border: none;
+  border-radius: 50%; /* Делаем кнопку круглой */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Скрываем части изображения, выходящие за пределы кнопки */
+  padding: 0; /* Убираем отступы внутри кнопки */
+}
+
+/* Стиль для изображения в кнопке */
+.homepage .profile-button img {
+  width: 100%; /* Изображение подгоняется под размер кнопки */
+  height: 100%;
+  object-fit: cover; /* Масштабируем изображение, чтобы оно полностью заполнило кнопку */
+  border-radius: 50%; /* Делаем изображение круглым */
+}
+
+/* Стиль для эффекта наведения */
+.homepage .profile-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

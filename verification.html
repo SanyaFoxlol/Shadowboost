@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <title>Verification Code</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .dynamic-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(270deg,#6a11cb,#8e44ad,#9b59b6,#c56cf0,#6a11cb);
+            background-size: 800% 800%;
+            animation: gradientAnimation 15s ease infinite;
+            z-index: -1;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: floatShape 10s infinite ease-in-out;
+            mix-blend-mode: overlay;
+        }
+
+        .shape.square {
+            border-radius: 0;
+        }
+
+        @keyframes floatShape {
+            0% {
+                transform: translateY(100vh) translateX(-50px) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-200vh) translateX(50vw) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .shape:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 80%;
+            left: 20%;
+            animation-duration: 12s;
+        }
+
+        .shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            left: 70%;
+            animation-duration: 15s;
+        }
+
+        .shape:nth-child(3) {
+            width: 120px;
+            height: 120px;
+            top: 90%;
+            left: 50%;
+            animation-duration: 10s;
+        }
+
+        .shape:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            top: 70%;
+            left: 30%;
+            animation-duration: 18s;
+        }
+
+        .shape:nth-child(5) {
+            width: 80px;
+            height: 80px;
+            top: 75%;
+            left: 85%;
+            animation-duration: 14s;
+        }
+
+        .verification-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .verification-container h1 {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .verification-container p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .verification-inputs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .verification-inputs input {
+            width: 50px;
+            height: 60px;
+            font-size: 24px;
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #6a11cb;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .verification-inputs input:focus {
+            background: #fff;
+            border: 2px solid #6a11cb;
+            box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+        }
+
+        .verification-inputs input::placeholder {
+            color: #aaa;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #6a11cb;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .submit-button:hover {
+            background: #6a11cb;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .submit-button:active {
+            transform: scale(0.95);
+        }
+
+        .loading {
+            opacity: 0.5;
+            pointer-events: none;
+            background: #6a11cb;
+        }
+
+        .resend {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .resend a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .resend a:hover {
+            text-decoration: underline;
+        }
+
+        .resend a.disabled {
+            pointer-events: none;
+            color: grey;
+            cursor: default;
+        }
+
+        .message {
+            margin-top: 15px;
+            color: #f44336; /* Red for error message */
+        }
+
+        .message.success {
+            color: #4CAF50; /* Green for success message */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dynamic-background"></div>
+    <div class="shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape square"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="verification-container">
+        <h1>Enter Verification Code</h1>
+        <p>We’ve sent a 6-digit code to your email. Please enter it below to proceed.</p>
+        <div class="verification-inputs">
+            <input type="text" maxlength="1" class="code-input" aria-label="First digit" placeholder="1">
+            <input type="text" maxlength="1" class="code-input" aria-label="Second digit" placeholder="2">
+            <input type="text" maxlength="1" class="code-input" aria-label="Third digit" placeholder="3">
+            <input type="text" maxlength="1" class="code-input" aria-label="Fourth digit" placeholder="4">
+            <input type="text" maxlength="1" class="code-input" aria-label="Fifth digit" placeholder="5">
+            <input type="text" maxlength="1" class="code-input" aria-label="Sixth digit" placeholder="6">
+        </div>
+        <button class="submit-button" id="verify-button">Verify</button>
+        <p class="resend">Didn't receive the code? <a href="#" id="resend-link">Resend Code</a></p>
+        <div class="message" id="error-message"></div>
+    </div>
+
+    <script>
+        const inputs = document.querySelectorAll('.code-input');
+        const verifyButton = document.getElementById('verify-button');
+        const resendLink = document.getElementById('resend-link');
+        const errorMessage = document.getElementById('error-message');
+    
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                // Allow only digits
+                e.target.value = e.target.value.replace(/\D/g, '');
+    
+                // Move focus to the next input if the current input has a value
+                if (e.target.value && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+    
+            input.addEventListener('focus', () => {
+                // Always start from the first input if empty
+                if (index === 0 || inputs[0].value === '') {
+                    inputs[0].focus();
+                }
+                else if (index === 1 || inputs[1].value === '') {
+                    inputs[1].focus();
+                }
+                else if (index === 2 || inputs[2].value === '') {
+                    inputs[2].focus();
+                }
+                else if (index === 3 || inputs[3].value === '') {
+                    inputs[3].focus();
+                }
+                else if (index === 4 || inputs[4].value === '') {
+                    inputs[4].focus();
+                }
+            });
+    
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && !input.value && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    
+        verifyButton.addEventListener('click', () => {
+            const code = Array.from(inputs).map(input => input.value).join('');
+            if (code.length === 6) {
+                verifyButton.classList.add('loading');
+                setTimeout(() => {
+                    errorMessage.textContent = "Verification code submitted!";
+                    errorMessage.classList.add('success');
+                    setTimeout(() => {
+                        window.location.href = 'http://127.0.0.1:5500/password-reset.html';
+                    }, 2000);
+                }, 2000);
+            } else {
+                errorMessage.textContent = "Please enter a valid 6-digit code.";
+                errorMessage.classList.remove('success');
+            }
+        });
+    
+        resendLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (resendLink.classList.contains('disabled')) {
+                return;
+            }
+    
+            resendLink.classList.add('disabled');
+            resendLink.textContent = "Resend Code (60s)";
+            
+            let countdown = 60;
+            const timerInterval = setInterval(() => {
+                countdown--;
+                resendLink.textContent = `Resend Code (${countdown}s)`;
+    
+                if (countdown <= 0) {
+                    clearInterval(timerInterval);
+                    resendLink.textContent = "Resend Code";
+                    resendLink.classList.remove('disabled');
+                }
+            }, 1000);
+    
+            // Simulate sending a verification code
+            alert('Verification code resent to your email.');
+        });
+    </script>
+    
+</body>
+
+</html>

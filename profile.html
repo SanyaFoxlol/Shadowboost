@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #1a001f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .edit-profile-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 300px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .edit-profile-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .edit-profile-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .edit-profile-container input[type="text"],
+        .edit-profile-container input[type="email"],
+        .edit-profile-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .edit-profile-container textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .edit-profile-container button {
+            padding: 12px;
+            background: linear-gradient(90deg, #7209b7, #9b42f5);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .edit-profile-container button:hover {
+            background: linear-gradient(90deg, #9b42f5, #6a00b3);
+        }
+
+        .edit-profile-container .cancel-btn {
+            background: #555;
+        }
+
+        .edit-profile-container .cancel-btn:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="edit-profile-container">
+        <h1>Edit Your Profile</h1>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Bio" required></textarea>
+            <button type="submit">Save Changes</button>
+            <button type="button" class="cancel-btn" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+    <script>
+        function cancelEdit() {
+            window.location.href = "/profile.html"; // Redirect back to the profile page
+        }
+
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Profile updated successfully!");
+            window.location.href = "/profile.html";
+        });
+    </script>
+</body>
+</html>
