@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="homepage">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow Boost</title>
+  <link rel="stylesheet" href="styles/style.css"> 
+</head>
+<body class="homepage">
+  <!-- Додайте кнопку в шапку -->
+  <header>
+    <div class="auth-button">
+      <button onclick="window.location.href='login.html'">Login / Register</button>
+    </div>
+  </header>
+
+  <div class="background-container">
+    <div class="content">
+      <div class="icon-card">
+        <h3>Categories</h3>
+      </div>
+      <div class="icon-card">
+        <h3>Customer Reviews</h3>
+      </div>
+      <div class="icon-card">
+        <h3>About Us</h3>
+      </div>
+      <div class="icon-card">
+        <h3>Pricing</h3>
+      </div>
+      <div class="icon-card">
+        <h3>Support</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Головний заголовок и описание -->
+  <h1>Shadow Boost</h1>
+  <p>Gaming Account Boosting Service</p>
+
+  <!-- Основные кнопки с индивидуальными позициями -->
+  <div class="buttons main-buttons">
+    <button id="btn-categories" onclick="window.location.href='categories.html'">Categories</button>
+    <button id="btn-reviews" onclick="window.location.href='#reviews'">Customer Reviews</button>
+    <button id="btn-aboutus" onclick="window.location.href='#About Us'">About Us</button>
+    <button id="btn-pricing" onclick="window.location.href='#pricing'">Pricing</button>
+    <button id="btn-support" onclick="window.location.href='#support'">Support</button>
+  </div>
+
+<!-- Боковое меню (слева) с кнопками и иконками -->
+<div class="buttons side-menu">
+  <button onclick="window.location.href='account-boosting.html'">
+    <img src="images/account-icon.png" alt="Account" class="button-icon">
+    <span>Account Boosting</span>
+  </button>
+  <button onclick="window.location.href='game-selection.html'">
+    <img src="images/game-icon.png" alt="Games" class="button-icon">
+    <span>Game Selection</span>
+  </button>
+  <button onclick="window.location.href='reviews-section.html'">
+    <img src="images/review-icon.png" alt="Reviews" class="button-icon">
+    <span>Reviews Section</span>
+  </button>
+  <button onclick="window.location.href='pricing.html'">
+    <img src="images/pricing-icon.png" alt="Pricing" class="button-icon">
+    <span>Pricing Section</span>
+  </button>
+  <button onclick="window.location.href='contact-support.html'">
+    <img src="images/support-icon.png" alt="Support" class="button-icon">
+    <span>Contact Support</span>
+  </button>
+</div>
+
+
+  <!-- Добавлено: Кнопка профиля -->
+  <div class="homepage">
+    <div class="profile-button-container">
+      <button class="profile-button" onclick="openProfilePage()">
+        <img src="images/ProfilFon.webp">
+      </button>
+    </div>
+  </div>
+  
+  <script>
+    // Функция для открытия другой страницы
+    function openProfilePage() {
+      window.location.href = "profile.html"; // Замените на URL вашей страницы
+    }
+  </script>
+  
